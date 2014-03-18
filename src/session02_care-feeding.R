@@ -41,7 +41,7 @@ subset(gDat, subset = year == 1952, select = c(year, country))
 # how many rows?
 # how many observations per continent?
 
-challenge <- subset(gDat, subset = lifeExp < 32)
+challenge <- subset(gDat, subset = lifeExp < 40)
 nrow(challenge) # there are 12
 summary(challenge$continent) # 8 in Africa, 4 in Asia
 table(challenge$continent) # another way to get number
