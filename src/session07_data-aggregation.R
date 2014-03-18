@@ -154,7 +154,7 @@ gCoef <- ddply(gDat, ~ country * continent, jFun) # oooh!
 str(gCoef) # look at it!
 
 # save to file, on to session 8
-# write.table(gCoef, "results/2014_03_17/gCoef.txt") # protects strings with quotes, has integer row names
+# write.table(gCoef, "../results/2014_03_18/gCoef.txt") # protects strings with quotes, has integer row names
 
 write.table(gCoef, "../results/2014_03_18/gCoef.txt", 
             quote = FALSE, sep = "\t", row.names = FALSE)
